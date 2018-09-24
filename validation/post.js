@@ -1,0 +1,24 @@
+const Validator = require("validator");
+const isEmpty = require("./is_empty");
+
+//data is an object of things to validate
+module.exports = function validatePostInput(data) {
+  let errors = {};
+
+  //isEmpty needs to check a string
+  // these two lines check if the data is set to null or undefined, if they are, set them two an empty string
+  data.text = !isEmpty(data.text) ? data.text : "";
+
+  if (!Validator.isLength(data.text, { min: 10, max: 300 })) {
+    errors.text = "Post must be between 10 and 300 characters";
+  }
+
+  if (Validator.isEmpty(data.text)) {
+    errors.text = "Text field is required";
+  }
+
+  return {
+    errors,
+    isValid: isEmpty(errors)
+  };
+};
