@@ -49,3 +49,14 @@ export const setCurrentUser = decoded => {
     payload: decoded
   };
 };
+
+//Log User Out
+export const logoutUser = () => dispatch => {
+  //remove token from local storage
+  localStorage.removeItem("jwtToken");
+  //remove the auth header for future requests
+  // setAuthToken sets the header with the token for every request
+  setAuthToken(false);
+  //set current user to {} which will set isAthenticated to false
+  dispatch(setCurrentUser({}));
+};
