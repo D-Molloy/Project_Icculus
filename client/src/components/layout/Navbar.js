@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import {PropTypes} from "prop-types";
+import { PropTypes } from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 
@@ -17,7 +17,7 @@ class Navbar extends Component {
       <ul className="navbar-nav ml-auto">
         <li className="nav-item">
           <a
-            href=""
+            href="#"
             onClick={this.onLogoutClick.bind(this)}
             className="nav-link"
           >
@@ -63,7 +63,6 @@ class Navbar extends Component {
           >
             <span className="navbar-toggler-icon" />
           </button>
-
           <div className="collapse navbar-collapse" id="mobile-nav">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
