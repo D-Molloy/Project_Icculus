@@ -36,17 +36,21 @@ class Profile extends Component {
               </Link>
             </div>
             <div className="col-md-6" />
-            {/* 2:46 */}
           </div>
+          <ProfileHeader profile={profile} />
+          <ProfileAbout />
+          <ProfileCreds />
+          <ProfileGithub />
         </div>
       );
     }
     return (
-      <div>
-        <ProfileHeader />
-        <ProfileAbout />
-        <ProfileCreds />
-        <ProfileGithub />
+      <div className="profile">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">{profileContent}</div>
+          </div>
+        </div>
       </div>
     );
   }
