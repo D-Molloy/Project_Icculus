@@ -20,16 +20,16 @@ class ProfileCreds extends Component {
         </p>
         <p>
           {exp.location === "" ? null : (
-            <p>
+            <span>
               <strong>Location: </strong> {exp.location}
-            </p>
+            </span>
           )}
         </p>
         <p>
           {exp.description === "" ? null : (
-            <p>
+            <span>
               <strong>Description: </strong> {exp.description}
-            </p>
+            </span>
           )}
         </p>
       </li>
@@ -53,9 +53,9 @@ class ProfileCreds extends Component {
         </p>
         <p>
           {edu.description === "" ? null : (
-            <p>
+            <span>
               <strong>Description: </strong> {edu.description}
-            </p>
+            </span>
           )}
         </p>
       </li>
