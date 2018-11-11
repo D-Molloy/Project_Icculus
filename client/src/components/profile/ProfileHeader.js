@@ -34,7 +34,7 @@ class ProfileHeader extends Component {
                     {isEmpty(profile.website) ? null : (
                       <a
                         className="text-white p-2"
-                        href={`http://${profile.website}`}
+                        href={profile.website}
                         target="_blank"
                       >
                         <i className="fas fa-globe fa-2x" />

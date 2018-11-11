@@ -93,24 +93,29 @@ class CreateProfile extends Component {
       });
     }
   }
-
+  checkUrl(url) {
+    if (url.trim().length > 0 && url.indexOf("http") === -1) {
+      return "http://" + url;
+    }
+    return url;
+  }
   onSubmit(e) {
     e.preventDefault();
 
     const profileData = {
       handle: this.state.handle,
       company: this.state.company,
-      website: this.state.website,
       location: this.state.location,
       status: this.state.status,
       skills: this.state.skills,
       githubusername: this.state.githubusername,
       bio: this.state.bio,
-      twitter: this.state.twitter,
-      facebook: this.state.facebook,
-      linkedin: this.state.linkedin,
-      youtube: this.state.youtube,
-      instagram: this.state.instagram
+      website: this.checkUrl(this.state.website),
+      twitter: this.checkUrl(this.state.twitter),
+      facebook: this.checkUrl(this.state.facebook),
+      linkedin: this.checkUrl(this.state.linkedin),
+      youtube: this.checkUrl(this.state.youtube),
+      instagram: this.checkUrl(this.state.instagram)
     };
 
     this.props.createProfile(profileData, this.props.history);
