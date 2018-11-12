@@ -4,7 +4,7 @@ import isEmpty from "../../validation/is_empty";
 class ProfileHeader extends Component {
   render() {
     const { profile } = this.props;
-    console.log(profile);
+
     return (
       <div className="row">
         <div className="col-md-12">

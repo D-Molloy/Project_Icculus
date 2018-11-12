@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
 class ProfileGithub extends Component {
@@ -22,8 +22,9 @@ class ProfileGithub extends Component {
     )
       .then(res => res.json())
       .then(data => {
-        console.log(data);
-        this.setState({ repos: data });
+        if (this.refs.myRef) {
+          this.setState({ repos: data });
+        }
       })
       .catch(err => console.log(err));
   }
@@ -62,7 +63,7 @@ class ProfileGithub extends Component {
       </div>
     ));
     return (
-      <div>
+      <div ref="myRef">
         <hr />
         <h3 className="mb-4">Latest GitHub Repos</h3>
         {repoItems}
