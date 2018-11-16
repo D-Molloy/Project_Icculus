@@ -1,6 +1,7 @@
 import {
   ADD_POST,
   GET_POSTS,
+  GET_POST,
   POST_LOADING,
   DELETE_POST,
   LIKE_POST
@@ -18,6 +19,12 @@ export default function(state = initialState, action) {
       return {
         ...state,
         loading: true
+      };
+    case GET_POST:
+      return {
+        ...state,
+        post: action.payload,
+        loading: false
       };
     case GET_POSTS:
       return {
