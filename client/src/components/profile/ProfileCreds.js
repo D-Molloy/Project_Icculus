@@ -8,7 +8,7 @@ class ProfileCreds extends Component {
       <li key={exp._id} className="list-group-item">
         <h4>{exp.company}</h4>
         <p>
-          <Moment format="YYYY-MM-DD">{exp.from}</Moment> =
+          <Moment format="YYYY-MM-DD">{exp.from}</Moment> to{" "}
           {exp.to === null ? (
             "Current"
           ) : (
@@ -38,7 +38,7 @@ class ProfileCreds extends Component {
       <li key={edu._id} className="list-group-item">
         <h4>{edu.School}</h4>
         <p>
-          <Moment format="YYYY-MM-DD">{edu.from}</Moment> =
+          <Moment format="YYYY-MM-DD">{edu.from}</Moment> to{" "}
           {edu.to === null ? (
             "Current"
           ) : (
