@@ -1,6 +1,6 @@
 # Camp Boot2Pro
 
-Technologies used: React, Redux, Node, Express, and Mongo (mLab)
+Technologies used: React, Redux, Node, Express, OAuth(JSON Web Tokens), and Mongo (mLab)
 
 ## About
 
