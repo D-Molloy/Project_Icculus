@@ -27,4 +27,4 @@ Camp Boot2Pro is a full-stack social platform for coding bootcamp students to sh
 > npm run dev
 ```
 
-If the React development server doesn't start up, go to **http://localhost:3000/** in your browser.
+If the React development server doesn't start up, go to **localhost:3000/** in your browser.
