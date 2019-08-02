@@ -1,6 +1,6 @@
 # DevConnector
 
-Technologies used: React, Redux, Node, Express, and Mongo (mLab)
+Technologies used: React, Redux, Node, Express, OAuth(JSON Web Tokens), and Mongo (mLab)
 
 ## About
 
@@ -27,4 +27,4 @@ DevConnector is a social platform for Software Engineers to showcase their skill
 > npm run dev
 ```
 
-If the React development server doesn't start up, go to **http://localhost:3000/** in your browser.
+If the React development server doesn't start up, go to **localhost:3000/** in your browser.
