@@ -20,8 +20,8 @@ DevConnector is a social platform for Software Engineers to showcase their skill
 **Note**: You will also need to register a [GitHub OAuth app](https://github.com/settings/applications/new) in order to get a **clientId** and a **clientSecret**. These need to be added to the state in client > src > components > profile > ProfileGithub.js
 
 ```
-> git clone https://github.com/D-Molloy/Project_Icculus.git
-> cd Project_Icculus
+> git clone https://github.com/D-Molloy/DevConnector.git
+> cd DevConnector
 > npm install
 > npm run client-install
 > npm run dev
