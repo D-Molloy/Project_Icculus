@@ -1,12 +1,12 @@
-# Camp Boot2Pro
+# DevConnector
 
 Technologies used: React, Redux, Node, Express, and Mongo (mLab)
 
 ## About
 
-Camp Boot2Pro is a full-stack social platform for coding bootcamp students to showcase their skills. Users can create profiles that will display development skills, educational and work experience, display recent GitHub repositories, create/like/unlike posts, and add comments to posts. The app also has extensive validation and error reporting.
+DevConnector is a social platform for Software Engineers to showcase their skills. Users can create profiles that will display development skills, educational and work experience, display recent GitHub repositories, create/like/unlike posts, and add comments to posts. The app also has extensive validation and error reporting.
 
-![Camp Boot2Pro Profile Screen](cb2p-profile.PNG)
+![DevConnector Profile Screen](cb2p-profile.PNG)
 
 ## Cloning the repo
 
