@@ -6,7 +6,7 @@ Technologies used: React, Redux, Node, Express, OAuth(JSON Web Tokens), and Mong
 
 DevConnector is a social platform for Software Engineers to showcase their skills. Users can create profiles that will display development skills, educational and work experience, display recent GitHub repositories, create/like/unlike posts, and add comments to posts. The app also has extensive validation and error reporting.
 
-![DevConnector Profile Screen](cb2p-profile.PNG)
+![DevConnector Screen](devconnector-transparent.png)
 
 ## Cloning the repo
 
